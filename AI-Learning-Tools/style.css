@@ -59,3 +59,19 @@ nav a {
     color: #4a6cf7;
     font-weight: bold;
 }
+.card-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
+    cursor: pointer;
+    font-weight: bold;
+}
