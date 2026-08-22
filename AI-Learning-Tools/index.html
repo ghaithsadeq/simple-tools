@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Learning Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🤖 AI Learning Tools</h1>
+    <p>Welcome! These tools help students learn AI concepts safely using Claude and Copilot.</p>
+
+    <div class="tool">
+        <h2>📝 Prompt Helper</h2>
+        <textarea id="promptInput" placeholder="Write your idea here..."></textarea>
+        <button onclick="generatePrompt()">Generate Better Prompt</button>
+        <p id="promptOutput"></p>
+    </div>
+
+    <div class="tool">
+        <h2>📚 AI Study Assistant</h2>
+        <textarea id="studyInput" placeholder="Paste your lesson or text here..."></textarea>
+        <button onclick="summarizeText()">Summarize</button>
+        <p id="studyOutput"></p>
+    </div>
+
+    <div class="tool">
+        <h2>💡 AI Explainer</h2>
+        <input id="explainInput" placeholder="Write a concept (example: neural network)">
+        <button onclick="explainConcept()">Explain</button>
+        <p id="explainOutput"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
