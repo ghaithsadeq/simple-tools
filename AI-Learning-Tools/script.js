@@ -17,3 +17,6 @@ function explainConcept() {
         "💡 Explanation:\nA simple explanation of '" + concept +
         "' for beginners. This concept is used in AI to help computers learn patterns.";
 }
+function showCard(text) {
+    document.getElementById("cardOutput").innerText = "📘 " + text;
+}
