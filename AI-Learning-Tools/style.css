@@ -30,3 +30,17 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+nav {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4a6cf7;
+    font-weight: bold;
+}
