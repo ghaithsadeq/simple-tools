@@ -44,3 +44,18 @@ nav a {
     color: #4a6cf7;
     font-weight: bold;
 }
+nav {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ccc;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4a6cf7;
+    font-weight: bold;
+}
