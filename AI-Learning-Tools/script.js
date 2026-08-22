@@ -20,3 +20,24 @@ function explainConcept() {
 function showCard(text) {
     document.getElementById("cardOutput").innerText = "📘 " + text;
 }
+let quizQuestions = [
+    { q: "What is a dataset?", a: "information" },
+    { q: "What is a prompt?", a: "instruction" },
+    { q: "What does AI stand for?", a: "artificial intelligence" }
+];
+
+let currentQuiz = 0;
+
+function startFullQuiz() {
+    currentQuiz = Math.floor(Math.random() * quizQuestions.length);
+    document.getElementById("quizQuestion").innerText = "❓ " + quizQuestions[currentQuiz].q;
+}
+
+function checkQuiz() {
+    let answer = document.getElementById("quizAnswer").value.toLowerCase();
+    if (answer.includes(quizQuestions[currentQuiz].a)) {
+        document.getElementById("quizResult").innerText = "✔ Correct!";
+    } else {
+        document.getElementById("quizResult").innerText = "❌ Try again!";
+    }
+}
