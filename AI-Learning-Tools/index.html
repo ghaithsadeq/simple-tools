@@ -6,19 +6,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <nav>
-    <a href="index.html">Home</a> |
-    <a href="tools.html">Tools</a> |
-    <a href="dashboard.html">Dashboard</a>
-</nav>
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="tools.html">Tools</a> |
-    <a href="README.md">About</a>
-</nav>
+        <a href="index.html">Home</a> |
+        <a href="tools.html">Tools</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="cards.html">AI Cards</a> |
+        <a href="quiz.html">Quiz</a> |
+        <a href="claude-info.html">Claude Info</a>
+    </nav>
+
     <h1>🤖 AI Learning Tools</h1>
     <p>Welcome! These tools help students learn AI concepts safely using Claude and Copilot.</p>
 
+    <!-- Prompt Helper -->
     <div class="tool">
         <h2>📝 Prompt Helper</h2>
         <textarea id="promptInput" placeholder="Write your idea here..."></textarea>
@@ -26,6 +28,7 @@
         <p id="promptOutput"></p>
     </div>
 
+    <!-- Study Assistant -->
     <div class="tool">
         <h2>📚 AI Study Assistant</h2>
         <textarea id="studyInput" placeholder="Paste your lesson or text here..."></textarea>
@@ -33,11 +36,41 @@
         <p id="studyOutput"></p>
     </div>
 
+    <!-- Concept Explainer -->
     <div class="tool">
         <h2>💡 AI Explainer</h2>
         <input id="explainInput" placeholder="Write a concept (example: neural network)">
         <button onclick="explainConcept()">Explain</button>
         <p id="explainOutput"></p>
+    </div>
+
+    <!-- Safety Checker -->
+    <div class="tool">
+        <h2>🛡️ AI Safety Checker</h2>
+        <textarea id="safetyInput" placeholder="Write your AI question or idea..."></textarea>
+        <button onclick="checkSafety()">Check Safety</button>
+        <p id="safetyOutput"></p>
+    </div>
+
+    <!-- Vocabulary Builder -->
+    <div class="tool">
+        <h2>📘 AI Vocabulary Builder</h2>
+        <button onclick="generateWord()">Generate AI Word</button>
+        <p id="wordOutput"></p>
+    </div>
+
+    <!-- Concept Cards -->
+    <div class="tool">
+        <h2>🎴 AI Concept Cards</h2>
+        <button onclick="showConcept()">Show Concept</button>
+        <p id="conceptOutput"></p>
+    </div>
+
+    <!-- Beginner Quiz -->
+    <div class="tool">
+        <h2>🧠 AI Beginner Quiz</h2>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <p id="quizOutput"></p>
     </div>
 
     <script src="script.js"></script>
