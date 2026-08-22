@@ -30,20 +30,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-nav {
-    background: #fff;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px #ccc;
-}
 
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #4a6cf7;
-    font-weight: bold;
-}
 nav {
     background: #fff;
     padding: 10px;
@@ -59,6 +46,7 @@ nav a {
     color: #4a6cf7;
     font-weight: bold;
 }
+
 .card-container {
     display: flex;
     gap: 15px;
@@ -74,4 +62,25 @@ nav a {
     box-shadow: 0 0 5px #ccc;
     cursor: pointer;
     font-weight: bold;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #1a1a1a;
+    color: white;
+}
+
+.dark-mode nav {
+    background: #333;
+    box-shadow: 0 0 5px #000;
+}
+
+.dark-mode .tool {
+    background: #2a2a2a;
+    box-shadow: 0 0 5px #000;
+}
+
+.dark-mode .card {
+    background: #2a2a2a;
+    box-shadow: 0 0 5px #000;
 }
